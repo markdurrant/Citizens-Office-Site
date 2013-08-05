@@ -1,0 +1,300 @@
+// playground for development
+img.logo{
+  margin: 0 20px 0 5px;
+  width: 100px;
+}
+
+h1.logo{
+  font-size: 50px;
+  line-height: .9;
+  padding-top: 24px;
+  margin-bottom: 80px;
+}
+
+.data{
+  font-size: 24px;
+  font-weight: 300;
+  color: saturate($ink, 30);
+  height: 509px;
+  overflow: hidden;
+  line-height: 1.6;
+  margin-bottom: 80px;
+
+  li{
+    @extend .clear-fix;
+    padding: 0 90px 0 10px;
+    position: relative;
+
+    &:nth-child(odd){
+      background-color: lighten($red, 42);
+    }
+  }
+}
+
+.name,
+.site,
+.time{
+  font-weight: 600;
+}
+
+.time{
+  right: 10px;
+  position: absolute;
+}
+
+footer{
+  height: 140px;
+  border-top: 1px solid desaturate(lighten($ink, 70), 20);
+  padding-top: 25px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 768px - 80;
+}
+
+div.mini-logo{
+  width: 240px;
+}
+
+img.mini-logo{
+  width: 34px;
+  margin: -9px 4px 0 0;
+}
+
+h1.mini-logo{
+  font-size: 18px;
+  line-height: .9;
+  color: desaturate(lighten($ink, 30), 20);
+  margin-bottom: 20px;
+}
+
+.footer-text{
+  text-align: right;
+  padding-left: 200px;
+  font-size: 12px;
+}
+
+[class*="panel"]{
+  position: absolute;
+  top: 40px;
+  background-color: $paper;
+  width: 768px - 80;
+  height: 780px;
+  -webkit-transition: left .3s, right .3s;
+  left: 40px;
+
+
+  &.off-left{
+    left: 768px;
+  }
+
+  &.off-right{
+    left: -768px + 80;
+  }
+}
+
+.blink{
+  position: absolute;
+  top: 228px;
+  // closed 365px
+
+  left: 265px;
+  background-color: $red;
+  border-radius: 100px;
+  height: 140px;
+  width: 140px;
+
+  -webkit-animation: blink 6s infinite; /* Safari 4+ */
+  -moz-animation:    blink 6s infinite; /* Fx 5+ */
+  -o-animation:      blink 6s infinite; /* Opera 12+ */
+  animation:         blink 6s infinite; /* IE 10+ */
+}
+
+.panel-1{
+}
+
+.panel-2{
+
+  .logo{
+    width: 400px;
+    margin-left: ((768px - 480) / 2);
+    margin-top: 40px;
+    z-index: 9999;
+    position: relative;
+  }
+
+  h1{
+    color: $red;
+    text-align: center;
+    font-size: 90px;
+    margin-top: 20px;
+  }
+}
+
+.panel-3{
+  text-align: center;
+
+  h1{
+    color: $red;
+    font-weight: 900;
+    font-size: 70px;
+    letter-spacing: 3px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+
+  .alert{
+    width: 100%;
+  }
+
+
+  h2{
+    font-size: 36px;
+  }
+
+  .deviant{
+    color: $red;
+  }
+}
+
+.alert-container{
+  width: 360px;
+  height: 360px;
+  margin: 20px auto 70px;
+  -webkit-animation: pulse .4s infinite alternate; /* Safari 4+ */
+  -moz-animation:    pulse .4s infinite alternate; /* Fx 5+ */
+  -o-animation:      pulse .4s infinite alternate; /* Opera 12+ */
+  animation:         pulse .4s infinite alternate; /* IE 10+ */
+}
+
+.panel-4{
+  .user{
+    background-color: $red;
+    padding: 20px 24px;
+    width: 200px;
+    border-radius: 4px;
+
+    margin-bottom: 70px;
+  }
+
+  .user-header span{
+    font-weight: 300;
+    display: block;
+    text-align: right;
+    width: 480px;
+    font-size: 52px;
+    line-height: 1;
+  }
+
+  .name{
+    color: $red;
+  }
+
+  .data{
+    height: 420px;
+  }
+}
+
+.panel-5{
+
+  .logo{
+    width: 400px;
+    margin-left: ((768px - 480) / 2);
+    margin-top: 40px;
+    z-index: 9999;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  h1{
+    color: $red;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    line-height: 1;
+  }
+}
+
+.panel-6{
+
+  .cloud-img{
+    float: left;
+    width: 30%;
+    position: relative;
+  }
+
+  .cloud{
+    position: absolute;
+    width: 260px;
+  }
+
+  .bolt-1,
+  .bolt-2,
+  .bolt-3{
+    position: absolute;
+    top: 190px;
+    width: 30px;
+  }
+
+  .bolt-1{
+    left: 58px;
+    -webkit-animation: flicker 2s infinite alternate; /* Safari 4+ */
+    -moz-animation:    flicker 2s infinite alternate; /* Fx 5+ */
+    -o-animation:      flicker 2s infinite alternate; /* Opera 12+ */
+    animation:         flicker 2s infinite alternate; /* IE 10+ */
+  }
+
+  .bolt-2{
+    left: 111px; 
+    width: 40px;
+    -webkit-animation: flicker 4s infinite alternate; /* Safari 4+ */
+    -moz-animation:    flicker 4s infinite alternate; /* Fx 5+ */
+    -o-animation:      flicker 4s infinite alternate; /* Opera 12+ */
+    animation:         flicker 4s infinite alternate; /* IE 10+ */
+  }
+
+  .bolt-3{
+    left: 178px;
+    -webkit-animation: flicker 3s infinite alternate; /* Safari 4+ */
+    -moz-animation:    flicker 3s infinite alternate; /* Fx 5+ */
+    -o-animation:      flicker 3s infinite alternate; /* Opera 12+ */
+    animation:         flicker 3s infinite alternate; /* IE 10+ */
+  }
+
+  .info{
+    font-size: 24px;
+    text-align: right;
+    font-weight: 300;
+    width: 60%;
+    float: right;
+    margin-bottom: 120px;
+  }
+
+  .data{
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0%   { padding: 0; }
+  100% { padding: 30px; }
+}
+
+@-webkit-keyframes blink {
+  0%   { top: 228px; }
+  4% { top: 365px; }
+  8%   { top: 228px; }
+  100%   { top: 228px; }
+}
+
+@-webkit-keyframes flicker {
+  0%   { opacity: 1; }
+  4% { opacity: 0.3; }
+  8%   { opacity: 1; }
+  32%   { opacity: 0.3; }
+  40%   { opacity: 1; }
+  66% { opacity: 0.3; }
+  75%   { opacity: 1; }
+  100%   { opacity: 0.3; }
+}

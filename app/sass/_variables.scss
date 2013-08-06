@@ -5,9 +5,9 @@ $paper: hsl(0, 0, 100);
 $ink: hsl(220, 20, 20);
 $ink-red: hsl(350, 77, 55);
 $ink-gray: hsl(220, 10, 50);
-$link: hsl(220,100,40);
+$link: $ink-red;
 $header: $ink;
 
 $body-font: "museo-sans", serif;
 
-$wrap-width: 38em;
+$wrap-width: 32em;

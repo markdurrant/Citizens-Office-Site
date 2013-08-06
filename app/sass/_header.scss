@@ -1,3 +1,23 @@
 //===============================================================================
 // HEADER
 //===============================================================================
+.site-header{
+  margin-bottom: 2em;
+
+  img{
+    float: left;
+    margin-right: .6em;
+    width: (1em / 14 * 40)
+  }
+
+  h1{
+    line-height: 1;
+    margin-bottom: 1em;
+    padding-top: .5em;
+    width: 14em;
+  }
+
+  h3{
+    color: $ink-red;
+  }
+}

@@ -29,12 +29,14 @@
 
 // SHARED-STYLES: styles used across multiple pages
 @import "_shared";
+@import "_agents";
 
 // GLOBAL-ELEMENTS: elements that are used on every page. Eg headers & footers
 @import "_header";
 @import "_footer";
 
 // PAGES: styles per page
+@import "_page";
 
 // BROWSER-FIXES: styles per page
 @import "_browser-fixes";

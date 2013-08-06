@@ -12,9 +12,10 @@
 body{
   background-color: $paper;
   color: $ink; 
-  font-size: 1.0625em;
+  font-size: (1em / 16 * 14);
   font-family: $body-font;
   line-height: 1.4;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -47,9 +48,10 @@ dd{
 a{
   color: $link;
   font-weight: bolder;
+  //text-decoration: none;
 
   &:hover{
-    color: darken($link, 10);  
+    color: darken($link, 20);  
   }
 }
 

@@ -1,9 +1,13 @@
 //===============================================================================
-// LAYOUT
+// AGENTS
 //===============================================================================
-.wrap{
-  margin: 0 auto;
-  padding: 2em 0;
-  width: 90%;
-  max-width: $wrap-width;
+.agents{
+  .title{
+    display: block;
+  }
+
+  a{
+    display: block;
+    margin-bottom: 1em;
+  }
 }

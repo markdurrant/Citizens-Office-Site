@@ -397,10 +397,11 @@ h6 {
 
 .photo-container,
 .promotion-container {
-  border-radius: 3px;
+  border-radius: 2px;
   border: 1px solid #c7cad1;
   margin: 1.5em auto;
-  text-align: center; }
+  text-align: center;
+  color: #737b8c; }
   .photo-container img,
   .promotion-container img {
     width: 100%;
@@ -413,7 +414,7 @@ h6 {
 
 .promotion {
   width: 24em;
-  border-radius: 3px;
+  border-radius: 2px;
   background: #e53451;
   color: white;
   text-align: center;

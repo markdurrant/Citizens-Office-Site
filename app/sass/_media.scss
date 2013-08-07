@@ -3,10 +3,11 @@
 //===============================================================================
 .photo-container,
 .promotion-container{
-  border-radius: 3px;
+  border-radius: 2px;
   border: 1px solid lighten($ink-gray, 30);
   margin: 1.5em auto;
   text-align: center;
+  color: $ink-gray;
 
   img{
     width: 100%;
@@ -22,7 +23,7 @@
 
 .promotion{
   width: 24em;
-  border-radius: 3px;
+  border-radius: 2px;
   background: $ink-red;
   color: white;
   text-align: center;

@@ -278,12 +278,20 @@ input[type="submit"] {
   width: 90%;
   max-width: 32em; }
 
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
 h1, h2, h3, h4, h5, h6 {
   color: #29303d; }
 
 .tera,
 .giga,
-.mega {
+.mega,
+.alpha,
+h1 {
   line-height: 1.1; }
 
 .tera {
@@ -296,8 +304,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.6em; }
 
 .alpha, h1 {
-  font-size: 2em;
-  line-height: 1.2; }
+  font-size: 2em; }
 
 .beta, h2 {
   font-size: 1.4em;
@@ -319,9 +326,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: .75em;
   line-height: 1.2; }
 
-.alpha, h1,
-.beta,
-h2,
+.beta, h2,
 .gamma,
 h3,
 .delta,
@@ -390,8 +395,39 @@ h6 {
     width: 13em;
     color: #737b8c; }
 
+.photo-container,
+.promotion-container {
+  border-radius: 3px;
+  border: 1px solid #c7cad1;
+  margin: 1.5em auto;
+  text-align: center; }
+  .photo-container img,
+  .promotion-container img {
+    width: 100%;
+    padding: .5em .5em .2em; }
+  .photo-container .italic,
+  .promotion-container .italic {
+    display: block;
+    padding: .25em;
+    border-top: 1px solid #c7cad1; }
+
+.promotion {
+  width: 24em;
+  border-radius: 3px;
+  background: #e53451;
+  color: white;
+  text-align: center;
+  padding: 3em 0;
+  margin: .5em auto; }
+  .promotion img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 2em; }
+
 h2 {
-  margin-top: 2em; }
+  margin-top: 2em;
+  color: #e53451; }
 
 @media all and (min-width: 640px) {
   body {
@@ -403,5 +439,5 @@ h2 {
   body {
     font-size: 1.25em; } }
 @media all and (min-width: 980px) {
-  body {
-    font-size: 1.375em; } }
+  .wrap {
+    max-width: 38em; } }

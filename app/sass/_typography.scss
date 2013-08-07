@@ -1,6 +1,14 @@
 //===============================================================================
 // TYPOGRAPHY
 //===============================================================================
+.bold{
+  font-weight: bold;
+}
+
+.italic{
+  font-style: italic;
+}
+
 h1, h2, h3, h4, h5, h6{
   color: $header;
 }
@@ -8,7 +16,8 @@ h1, h2, h3, h4, h5, h6{
 // font sizes
 .tera,
 .giga,
-.mega{
+.mega, 
+.alpha{
   line-height: 1.1;
 }
 
@@ -26,7 +35,6 @@ h1, h2, h3, h4, h5, h6{
 
 .alpha{
   font-size: 2em;
-  line-height: 1.2;
 }
 
 .beta{
@@ -54,7 +62,6 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1.2;
 }
 
-.alpha,
 .beta,
 .gamma,
 .delta,

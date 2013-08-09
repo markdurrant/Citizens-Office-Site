@@ -23,6 +23,7 @@
 
 .promotion{
   width: 24em;
+  max-width: 95%;
   border-radius: 2px;
   background: $ink-red;
   color: white;
@@ -35,6 +36,7 @@
     display: block;
     margin: 0 auto;
     width: 15em;
+    max-width: 70%;
     margin-bottom: 2em;
     z-index: 9999;
     position: relative;

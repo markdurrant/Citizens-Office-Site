@@ -442,7 +442,7 @@ h6 {
   background: white;
   left: 50%;
   margin-left: -3em;
-  top: 30%;
+  top: 29%;
   -webkit-animation: blink 5s infinite;
   /* Safari 4+ */
   -moz-animation: blink 5s infinite;
@@ -453,55 +453,55 @@ h6 {
 
 @-webkit-keyframes blink {
   0% {
-    top: 30%; }
+    top: 29%; }
 
   92% {
-    top: 30%; }
+    top: 29%; }
 
   96% {
     top: 49%; }
 
   100% {
-    top: 30%; } }
+    top: 29%; } }
 
 @-moz-keyframes blink {
   0% {
-    top: 30%; }
+    top: 29%; }
 
   92% {
-    top: 30%; }
+    top: 29%; }
 
   96% {
     top: 49%; }
 
   100% {
-    top: 30%; } }
+    top: 29%; } }
 
 @-o-keyframes blink {
   0% {
-    top: 30%; }
+    top: 29%; }
 
   92% {
-    top: 30%; }
+    top: 29%; }
 
   96% {
     top: 49%; }
 
   100% {
-    top: 30%; } }
+    top: 29%; } }
 
 @-keyframes blink {
   0% {
-    top: 30%; }
+    top: 29%; }
 
   92% {
-    top: 30%; }
+    top: 29%; }
 
   96% {
     top: 49%; }
 
   100% {
-    top: 30%; } }
+    top: 29%; } }
 
 h2 {
   margin-top: 2em;
